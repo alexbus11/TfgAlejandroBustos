@@ -1,0 +1,367 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+% 
+
+% Generic template for the anteproyectos of TFC/TFM/TFGs
+% 
+% $Id: anteproyecto.tex,v 1.6 2018/09/11 12:23:48 macias Exp $
+% 
+% By:
+%  + Javier Macías-Guarasa. 
+%    Departamento de Electrónica
+%    Universidad de Alcalá
+%  + Roberto Barra-Chicote. 
+%    Departamento de Ingeniería Electrónica
+%    Universidad Politécnica de Madrid   
+% 
+% Based on original sources by Roberto Barra, Manuel Ocaña, Jesús Nuevo,
+% Pedro Revenga, Fernando Herránz and Noelia Hernández. Thanks a lot to
+% all of them, and to the many anonymous contributors found (thanks to
+% google) that provided help in setting all this up.
+% 
+% See also the additionalContributors.txt file to check the name of
+% additional contributors to this work.
+% 
+% If you think you can add pieces of relevant/useful examples,
+% improvements, please contact us at (macias@depeca.uah.es)
+% 
+% You can freely use this template and please contribute with
+% comments or suggestions!!!
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+
+% This is for rubber to clean additional files
+% rubber: clean anteproyecto.acn anteproyecto.acr anteproyecto.alg anteproyecto.cod anteproyecto.ist anteproyecto.out anteproyecto.sbl anteproyecto.slg anteproyecto.sym anteproyecto.lor
+
+\documentclass[11pt,a4paper,oneside]{article}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+% BEGIN Preamble and configuration section
+% 
+\input{../Config/preamble.tex}    % DO NOT TOUCH THIS LINE. You can edit
+                                  % the file to modify some default settings
+
+\input{../Config/myconfig.tex}    % DO NOT TOUCH THIS LINE, but EDIT THIS FILE
+                                  % to set your specific settings (related
+                                  % to the document language, your degree,
+                                  % document details (such as title, author
+                                  % (you), your email, name of the tribunal
+                                  % members, document year, keyword and
+                                  % palabras clave) and link colors), and
+                                  % define your commonly used commands
+                                  % (some examples are provided).
+
+\input{../Config/postamble.tex}   % DO NOT TOUCH THIS LINE. Yes, I know,
+                                  % "postamble" is not a valid word... :-)
+%
+% END Preamble and configuration section
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% path to directories containing images
+\graphicspath{{../Book/logos/}{../Book/figures/}{../Book/diagrams/}} % Edit this to your
+                                  % needs. Only logos is really required
+                                  % when you generate your own content.
+% 
+% END Preamble and configuration section
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+
+\title{Anteproyecto de \myWorkTypeFull}        % DO NOT TOUCH THIS LINE
+\date{\myThesisProposalDate}                         % DO NOT TOUCH THIS LINE
+\author{\myAuthorFullName}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+% Let's start with the real stuff
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+\begin{document}                                   % DO NOT TOUCH THIS LINE
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+% BEGIN within-document configuration, frontpage and cover pages generation
+% 
+
+% Set Language dependent issues that must be set after \begin{document}
+\input{../Config/setlanguagedependentissues.tex} % DO NOT TOUCH THIS LINE
+                                                 % NOR THE FILE
+
+% 
+% END within-document configuration, frontpage and cover pages generation
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+
+\maketitle
+
+\begin{description}                               % DO NOT TOUCH THIS LINE
+\item[\expandafter\makefirstuc\expandafter{\wordAutorOrAutora}:] \myAuthorFullName                       % DO NOT TOUCH THIS LINE
+\item[\expandafter\makefirstuc\expandafter{\wordTutorOrTutores}:] \myAdvisors                   % DO NOT TOUCH THIS LINE
+  \item[Titulación:] \myDegreefull                % DO NOT TOUCH THIS LINE
+  \item[Título:] \myBookTitleSpanish              % DO NOT TOUCH THIS LINE
+  \ifthenelse{\equal{\myLanguage}{english}}       % DO NOT TOUCH THIS LINE
+  {                                               % DO NOT TOUCH THIS LINE
+  \item[Título en inglés:] \myBookTitleEnglish    % DO NOT TOUCH THIS LINE
+  }                                               % DO NOT TOUCH THIS LINE
+  {                                               % DO NOT TOUCH THIS LINE
+  }                                               % DO NOT TOUCH THIS LINE
+\item[Departamento:] \myDepartment                % DO NOT TOUCH THIS LINE
+\end{description}                                 % DO NOT TOUCH THIS LINE
+
+%\tableofcontents
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+% BEGIN Normal sections. Edit/modify all within this section
+
+\section{Introducción}
+\label{sec:introduccion}
+
+\subsection{Contexto y Motivación: El Proyecto NEUREYE}
+\label{sec:contexto_neureye}
+En los últimos años, la monitorización continua y no invasiva de las Actividades de la Vida Diaria (AVD) se ha consolidado como una línea de investigación estratégica en la evaluación de la autonomía física y cognitiva. La valoración de praxias y patrones motores proporciona información vital en procesos de neurorrehabilitación y seguimiento de pacientes.
+
+En este marco se encuadra el proyecto \textbf{NEUREYE}, desarrollado por el grupo de investigación \textbf{GEINTRA} (Grupo de Ingeniería Electrónica Aplicada a Espacios Inteligentes y Transportes). El propósito fundamental de NEUREYE es ofrecer un sistema de evaluación motora automatizado y no invasivo que evite la necesidad de realizar visitas domiciliarias presenciales por parte del personal clínico a los hogares de los pacientes, permitiendo así una monitorización remota y objetiva.
+
+Dentro del flujo de evaluación de NEUREYE, las instrucciones guiadas para la ejecución de los ejercicios son proporcionadas de forma interactiva mediante un módulo de síntesis de voz (\textit{Text-To-Speech}, TTS) desarrollado de manera paralela por otro grupo colaborador. El presente Trabajo de Fin de Grado centra su alcance en el desarrollo del módulo de visión artificial, encargado de procesar la respuesta visual del usuario e identificar si se ejecutan correctamente los gestos simulados de \textbf{comer sopa (sin cuchara)} y \textbf{cortar una barra de pan (sin cuchillo)}.
+
+\subsection{Definición del Problema y Desafíos Técnicos}
+\label{subsec:definicion_problema}
+
+La detección y clasificación automática de gestos cotidianos simulados (ejecutados mediante pantomima, sin objetos físicos) mediante visión artificial presenta desafíos técnicos específicos:
+
+\begin{itemize}
+	\item \textbf{Ausencia de pistas visuales de objetos:} Al no existir elementos físicos como la cuchara o el cuchillo, no es posible recurrir a modelos estándar de detección de objetos. La clasificación debe basarse exclusivamente en la dinámica, geometría y cinemática 3D del movimiento de las extremidades superiores.
+	\item \textbf{Auto-oclusiones de las extremidades:} Durante la ejecución de los gestos (por ejemplo, al llevar la mano hacia la boca al simular comer sopa o al cruzar los brazos/manos para simular el corte bimanual de pan), los propios dedos, manos o antebrazos pueden ocluir parcialmente las articulaciones clave respecto al ángulo de visión de la cámara.
+	\item \textbf{Variabilidad intra e inter-personal:} La velocidad, la amplitud de la trayectoria y la postura adoptada al simular una acción varían significativamente entre distintos usuarios, especialmente en personas con afectaciones motoras o cognitivas.
+	\item \textbf{Procesamiento e inferencia en tiempo real:} El módulo debe ser capaz de procesar el flujo continuo de datos RGB-D procedente de la cámara Stereolabs ZED y realizar la clasificación con baja latencia sobre la GPU, garantizando una respuesta fluida para el sistema NEUREYE.
+\end{itemize}
+Tradicionalmente, la detección de estas actividades requería el uso de sensores inerciales adheridos al cuerpo (\textit{wearables}), los cuales pueden resultar incomodantes o invasivos para el usuario. El reto de este Trabajo de Fin de Grado consiste en desarrollar una solución basada puramente en **visión artificial y procesamiento de vídeo**, que permita clasificar e identificar automáticamente cuándo se ejecutan las acciones de comer sopa y cortar pan sin necesidad de contacto físico.
+
+
+
+
+  
+\section{Objetivos}
+\label{sec:objetivos-y-campo}
+
+\textit{En este apartado se delimitan y explican con claridad los objetivos
+  generales a conseguir con el TFG y la aplicación del mismo, así como los
+  objetivos específicos en su caso. Algo del tipo:}
+
+El objetivo fundamental de este proy\subsubsection{Objetivo General}
+El objetivo principal de este Trabajo de Fin de Grado es diseñar, implementar y evaluar un sistema de visión artificial capaz de detectar y clasificar de forma automática en tiempo real las acciones de comer sopa y cortar una barra de pan a partir de la señal de una cámara, integrándose como módulo funcional dentro del proyecto NEUREYE.
+
+\subsubsection{Objetivos Específicos}
+Para alcanzar el objetivo general, se plantean los siguientes objetivos específicos:
+
+\begin{enumerate}
+	\item \textbf{Revisión del estado del arte:} Analizar las técnicas actuales de visión por computador aplicadas al reconocimiento de acciones humanas (HAR), detección de poses (\textit{pose estimation}) e interacción persona-objeto.
+	\item \textbf{Captura y preparación de datos:} Conformar un conjunto de secuencias de vídeo que recojan ejecuciones de los gestos objeto de estudio (comer sopa y cortar pan) bajo distintas condiciones y usuarios.
+	\item \textbf{Diseño e implementación de algoritmos:} Desarrollar los algoritmos de extracción de características (puntos clave de la mano/cuerpo, trayectorias o detección de utensilios) y clasificación para la discriminación de ambos gestos.
+	\item \textbf{Integración con cámara en tiempo real:} Adaptar la canalización de procesamiento (\textit{pipeline}) para que funcione de manera continua y eficiente a través de una cámara de vídeo estándar.
+	\item \textbf{Evaluación y validación:} Analizar el rendimiento de la solución desarrollada en términos de precisión, sensibilidad y tasa de procesado de fotogramas por segundo (FPS).
+\end{enumerate}
+
+
+
+
+
+\section{Descripción del trabajo}
+\label{sec:descr-del-trab}
+
+El presente Trabajo de Fin de Grado aborda el diseño e implementación del módulo de visión por computador dentro del ecosistema NEUREYE. Este módulo procesa la señal de vídeo e información de profundidad procedentes de una cámara estereoscópica Stereolabs ZED para clasificar automáticamente dos gestos cotidianos simulados: comer sopa (sin cuchara) y cortar una barra de pan (sin cuchillo).
+
+El sistema opera en coordinación con el módulo de voz (TTS) del proyecto, el cual indica verbalmente al usuario el ejercicio a realizar. Una vez emitida la instrucción vocal, el módulo desarrollado en este trabajo analiza el flujo cinemático tridimensional en tiempo real sin requerir la presencia de objetos reales (cuchara o cuchillo) ni de supervisión médica presencial.
+
+La recolección de datos para el diseño y validación del sistema se lleva a cabo en un laboratorio de pruebas de la Facultad de Ciencias de la Salud / Medicina de la Universidad Rey Juan Carlos (URJC), acondicionado específicamente como un entorno de cocina simulada para reproducir fielmente las condiciones lumínicas y espaciales de un hogar real.
+
+En la Figura~\ref{fig:arquitectura_sistema} se ilustra el esquema de la arquitectura conceptual propuesta y la integración de las entradas/salidas del sistema.
+
+\begin{figure}[htbp]
+	\centering
+	\begin{tikzpicture}[
+		node distance=1.6cm and 1.2cm,
+		block/.style={rectangle, draw, thick, text width=4.2cm, align=center, minimum height=1.2cm},
+		process/.style={ellipse, draw, thick, text width=3.4cm, align=center, minimum height=1.1cm},
+		line/.style={draw, -latex, thick}
+		]
+		
+		% Entradas
+		\node [block] (camara) {Información de Vídeo RGB-D\\ \small (Cámara Stereolabs ZED)};
+		
+		% Procesador Central
+		\node [process, below=of camara] (procesador) {Procesador Central NEUREYE\\ \small (Análisis cinemático 3D e inferencia)};
+		
+		% Salidas / Clasificación
+		\node [block, below left=of procesador] (deteccion1) {Detección Gesto 1:\\ \small Comer sopa (sin cuchara)};
+		\node [block, below right=of procesador] (deteccion2) {Detección Gesto 2:\\ \small Cortar pan (sin cuchillo)};
+		
+		% Conexiones
+		\path [line] (camara) -- (procesador);
+		\path [line] (procesador) -| (deteccion1);
+		\path [line] (procesador) -| (deteccion2);
+		
+	\end{tikzpicture}
+	\caption{Arquitectura conceptual del módulo de visión dentro del sistema NEUREYE.}
+	\label{fig:arquitectura_sistema}
+\end{figure}
+5. Actualización de Medios (Punto 5)
+Fragmento de código
+\section{Medios}
+\label{sec:medios}
+
+Para la realización del proyecto se emplearán los siguientes medios materiales, instalaciones y recursos de software:
+
+\begin{itemize}
+	\item \textbf{Instalaciones y Entorno de Prueba:}
+	\begin{itemize}
+		\item \textbf{Cocina de Pruebas (Facultad de Medicina / CC. Salud URJC):} Espacio acondicionado en forma de cocina simulada para la grabación del dataset bajo condiciones de entorno doméstico realista.
+	\end{itemize}
+	\item \textbf{Recursos Hardware:}
+	\begin{itemize}
+		\item \textbf{Cámara Estereoscópica Stereolabs ZED:} Cámara RGB-D para la captura de mapas de profundidad y seguimiento esquelético en 3D.
+		\item \textbf{Equipo de Cómputo GEINTRA:} Ordenador de altas prestaciones con GPU dedicada, cedido por el grupo de investigación GEINTRA para el entrenamiento e inferencia en tiempo real.
+	\end{itemize}
+	\item \textbf{Entorno Software e Integración:}
+	\begin{itemize}
+		\item \textbf{Lenguaje y Entornos:} Python 3.x, ZED SDK, OpenCV y librerías de procesado e inteligencia artificial (NumPy, Scikit-Learn, PyTorch/TensorFlow).
+		\item \textbf{Módulos Externos (NEUREYE):} Integración conceptual con el módulo de instrucciones por voz (TTS) desarrollado por equipos colaboradores del proyecto.
+		\item \textbf{Edición:} Sistema \LaTeX{} para la maquetación y redacción de la propuesta y memoria del TFG.
+	\end{itemize}
+\end{itemize}
+\begin{figure}[htbp]
+	\centering
+	\begin{tikzpicture}[
+		node distance=1.6cm and 1.2cm,
+		block/.style={rectangle, draw, thick, text width=4.2cm, align=center, minimum height=1.2cm},
+		process/.style={ellipse, draw, thick, text width=3.4cm, align=center, minimum height=1.1cm},
+		line/.style={draw, -latex, thick}
+		]
+		
+		% Entrada
+		\node [block] (camara) {Información de Vídeo RGB-D\\ \small (Captada mediante cámara ZED)};
+		
+		% Procesador Central
+		\node [process, below=of camara] (procesador) {Procesador Central NEUREYE\\ \small (Estimación de pose y cinemática 3D)};
+		
+		% Salidas / Clasificación
+		\node [block, below left=of procesador] (deteccion1) {Gesto 1:\\ \small Comer sopa (sin cuchara)};
+		\node [block, below right=of procesador] (deteccion2) {Gesto 2:\\ \small Cortar pan (sin cuchillo)};
+		
+		% Conexiones
+		\path [line] (camara) -- (procesador);
+		\path [line] (procesador) -| (deteccion1);
+		\path [line] (procesador) -| (deteccion2);
+		
+	\end{tikzpicture}
+	\caption{Arquitectura conceptual del sistema de detección de gestos dentro del marco NEUREYE.}
+	\label{fig:arquitectura_sistema}
+\end{figure}
+
+\section{Metodología y plan de trabajo}
+\label{sec:metodologia-y-plan}
+Para la consecución de los objetivos planteados en el proyecto, se adoptará una metodología iterativa dividida en las siguientes etapas consecutivas:
+
+\begin{enumerate}
+	\item \textbf{Formación inicial:} Estudio del estado del arte en estimación de pose 3D, revisión de la API/SDK de Stereolabs ZED y librerías de visión por computador (OpenCV).
+	\item \textbf{Diseño del entorno:} Configuración del sistema de captura RGB-D con la cámara ZED y preparación del entorno de grabación y etiquetado para las secuencias de vídeo.
+	\item \textbf{Módulo 1 (Detección de comer sopa sin cuchara):} 
+	\begin{itemize}
+		\item \textit{Definición:} Selección de puntos clave cinemáticos (manos y brazos) y criterios de detección.
+		\item \textit{Implementación:} Desarrollo del algoritmo de extracción de características y clasificación temporal.
+		\item \textit{Evaluación:} Validación de la tasa de acierto y robustez frente a falsos positivos.
+	\end{itemize}
+	\item \textbf{Módulo 2 (Detección de cortar pan sin cuchillo):}
+	\begin{itemize}
+		\item \textit{Definición:} Identificación de patrones bimanuales y cinemática 3D específica del gesto.
+		\item \textit{Implementación:} Programación del algoritmo de clasificación para la interacción simulada.
+		\item \textit{Evaluación:} Medición de sensibilidad, precisión y rendimiento.
+	\end{itemize}
+	\item \textbf{Integración y pruebas:} Conexión de ambos módulos con el flujo continuo en tiempo real dentro del framework de NEUREYE y pruebas globales del sistema.
+	\item \textbf{Documentación:} Elaboración continua de la memoria del TFG y preparación de la defensa.
+\end{enumerate}
+
+\subsection{Planificación temporal (Diagrama de Gantt)}
+\label{subsec:gantt}
+
+En la Figura~\ref{fig:gantt} se detalla la planificación temporal de las actividades a lo largo del periodo de desarrollo.
+
+\begin{figure}[htbp]
+	\centering
+	\begin{ganttchart}[
+		x unit=1.1cm,
+		y unit title=0.5cm,
+		y unit chart=0.5cm,
+		vgrid={*1{dotted}},
+		hgrid={*1{dotted}},
+		title height=1,
+		title label font=\small,
+		bar/.style={draw=black, fill=white},
+		bar progress label font=\small,
+		group/.style={draw=black, fill=gray!60}
+		]{1}{6}
+		\gantttitle{2025}{6} \\
+		\gantttitle{01}{1} \gantttitle{02}{1} \gantttitle{03}{1} \gantttitle{04}{1} \gantttitle{05}{1} \gantttitle{06}{1} \\
+		
+		\ganttbar{Formación inicial}{1.1}{2.0} \\
+		\ganttbar{Diseño del entorno}{2.0}{2.6} \\
+		
+		\ganttgroup{Módulo 1: Comer sopa}{2.5}{4.5} \\
+		\ganttbar[inline=false]{Definición}{2.5}{2.8} \\
+		\ganttbar[inline=false]{Implementación}{2.7}{4.1} \\
+		\ganttbar[inline=false]{Evaluación}{3.2}{4.5} \\
+		
+		\ganttgroup{Módulo 2: Cortar pan}{3.8}{5.6} \\
+		\ganttbar[inline=false]{Definición}{3.8}{4.1} \\
+		\ganttbar[inline=false]{Implementación}{4.0}{5.1} \\
+		\ganttbar[inline=false]{Evaluación}{4.5}{5.6} \\
+		
+		\ganttbar{Integración y pruebas}{4.2}{6.0} \\
+		\ganttbar{Documentación}{1.0}{6.0}
+	\end{ganttchart}
+	\caption{Diagrama de Gantt de la planificación del trabajo.}
+	\label{fig:gantt}
+\end{figure}
+\section{Medios}
+\label{sec:medios}
+
+Para la realización del proyecto se emplearán los siguientes medios materiales, instalaciones y recursos de software:
+
+\begin{itemize}
+	\item \textbf{Instalaciones y Entorno de Prueba:}
+	\begin{itemize}
+		\item \textbf{Cocina de Pruebas (Facultad de Medicina / CC. Salud URJC):} Espacio acondicionado en forma de cocina simulada para la grabación del dataset bajo condiciones de entorno doméstico realista.
+	\end{itemize}
+	\item \textbf{Recursos Hardware:}
+	\begin{itemize}
+		\item \textbf{Cámara Estereoscópica Stereolabs ZED:} Cámara RGB-D para la captura de mapas de profundidad y seguimiento esquelético en 3D.
+		\item \textbf{Equipo de Cómputo GEINTRA:} Ordenador de altas prestaciones con GPU dedicada, cedido por el grupo de investigación GEINTRA para el entrenamiento e inferencia en tiempo real.
+	\end{itemize}
+	\item \textbf{Entorno Software e Integración:}
+	\begin{itemize}
+		\item \textbf{Lenguaje y Entornos:} Python 3.x, ZED SDK, OpenCV y librerías de procesado e inteligencia artificial (NumPy, Scikit-Learn, PyTorch/TensorFlow).
+		\item \textbf{Módulos Externos (NEUREYE):} Integración conceptual con el módulo de instrucciones por voz (TTS) desarrollado por equipos colaboradores del proyecto.
+		\item \textbf{Edición:} Sistema \LaTeX{} para la maquetación y redacción de la propuesta y memoria del TFG.
+	\end{itemize}
+\end{itemize}
+
+
+% 
+% END Normal sections. Edit/modify all within this section
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+% Bibliography
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+\input{../Book/biblio/bibliography.tex}               % EDIT this file if required
+
+
+
+\end{document}
+
