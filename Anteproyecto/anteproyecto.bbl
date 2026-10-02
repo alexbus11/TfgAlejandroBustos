@@ -16,53 +16,5 @@
   {}
 \endgroup
 
-
-\refsection{0}
-  \datalist[entry]{none/global//global/global/global}
-    \entry{moore2002}{report}{}{}
-      \name{author}{1}{}{%
-        {{hash=cd915ba418a0847ce3bcc6c8adb8d594}{%
-           family={Moore},
-           familyi={M\bibinitperiod},
-           given={Darren\bibnamedelima C.},
-           giveni={D\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
-      }
-      \list{institution}{1}{%
-        {IDIAP Research Institute}%
-      }
-      \list{location}{1}{%
-        {Switzerland}%
-      }
-      \strng{namehash}{cd915ba418a0847ce3bcc6c8adb8d594}
-      \strng{fullhash}{cd915ba418a0847ce3bcc6c8adb8d594}
-      \strng{fullhashraw}{cd915ba418a0847ce3bcc6c8adb8d594}
-      \strng{bibnamehash}{cd915ba418a0847ce3bcc6c8adb8d594}
-      \strng{authorbibnamehash}{cd915ba418a0847ce3bcc6c8adb8d594}
-      \strng{authornamehash}{cd915ba418a0847ce3bcc6c8adb8d594}
-      \strng{authorfullhash}{cd915ba418a0847ce3bcc6c8adb8d594}
-      \strng{authorfullhashraw}{cd915ba418a0847ce3bcc6c8adb8d594}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{month}{11}
-      \field{title}{The {IDIAP} Smart Meeting Room}
-      \field{type}{techreport}
-      \field{year}{2004}
-      \verb{urlraw}
-      \verb http://publications.idiap.ch/downloads/reports/2002/com02-07.pdf
-      \endverb
-      \verb{url}
-      \verb http://publications.idiap.ch/downloads/reports/2002/com02-07.pdf
-      \endverb
-    \endentry
-  \enddatalist
-  \missing{cvs}
-  \missing{emacs}
-  \missing{gcc}
-  \missing{gnulinux}
-  \missing{lamport94}
-  \missing{make}
-\endrefsection
 \endinput
 

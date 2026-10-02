@@ -1,24 +1,9 @@
 [0] Config.pm:329> INFO - This is Biber 2.22
 [0] Config.pm:332> INFO - Logfile is 'anteproyecto.blg'
-[213] biber-MSWIN64:342> INFO - === 
-[278] Biber.pm:421> INFO - Reading 'anteproyecto.bcf'
-[422] Biber.pm:1002> INFO - Found 7 citekeys in bib section 0
-[450] Biber.pm:4487> INFO - Processing section 0
-[485] Biber.pm:4680> INFO - Looking for bibtex file '../Book/biblio/biblio.bib' for section 0
-[577] bibtex.pm:1713> INFO - LaTeX decoding ...
-[599] bibtex.pm:1519> INFO - Found BibTeX data source '../Book/biblio/biblio.bib'
-[645] Biber.pm:4680> INFO - Looking for bibtex file '../Book/biblio/nobiblio.bib' for section 0
-[718] bibtex.pm:1713> INFO - LaTeX decoding ...
-[724] bibtex.pm:1519> INFO - Found BibTeX data source '../Book/biblio/nobiblio.bib'
-[734] UCollate.pm:68> INFO - Overriding locale 'es-ES' defaults 'variable = shifted' with 'variable = non-ignorable'
-[735] UCollate.pm:68> INFO - Overriding locale 'es-ES' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[735] Biber.pm:4307> INFO - Sorting list 'none/global//global/global/global' of type 'entry' with template 'none' and locale 'es-ES'
-[747] bbl.pm:676> INFO - Writing 'anteproyecto.bbl' with encoding 'UTF-8'
-[749] bbl.pm:779> INFO - Output to anteproyecto.bbl
-[750] Biber.pm:132> WARN - I didn't find a database entry for 'gnulinux' (section 0)
-[750] Biber.pm:132> WARN - I didn't find a database entry for 'emacs' (section 0)
-[750] Biber.pm:132> WARN - I didn't find a database entry for 'lamport94' (section 0)
-[750] Biber.pm:132> WARN - I didn't find a database entry for 'cvs' (section 0)
-[750] Biber.pm:132> WARN - I didn't find a database entry for 'gcc' (section 0)
-[750] Biber.pm:132> WARN - I didn't find a database entry for 'make' (section 0)
-[750] Biber.pm:134> INFO - WARNINGS: 6
+[89] biber-MSWIN64:342> INFO - === 
+[130] Biber.pm:421> INFO - Reading 'anteproyecto.bcf'
+[214] Biber.pm:1002> INFO - Found 0 citekeys in bib section 0
+[223] bbl.pm:676> INFO - Writing 'anteproyecto.bbl' with encoding 'UTF-8'
+[223] bbl.pm:779> INFO - Output to anteproyecto.bbl
+[223] Biber.pm:132> WARN - The file 'anteproyecto.bcf' does not contain any citations!
+[223] Biber.pm:134> INFO - WARNINGS: 1

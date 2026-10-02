@@ -8,23 +8,6 @@
 %  + Javier Macías-Guarasa. 
 %    Departamento de Electrónica
 %    Universidad de Alcalá
-%  + Roberto Barra-Chicote. 
-%    Departamento de Ingeniería Electrónica
-%    Universidad Politécnica de Madrid   
-% 
-% Based on original sources by Roberto Barra, Manuel Ocaña, Jesús Nuevo,
-% Pedro Revenga, Fernando Herránz and Noelia Hernández. Thanks a lot to
-% all of them, and to the many anonymous contributors found (thanks to
-% google) that provided help in setting all this up.
-%
-% See also the additionalContributors.txt file to check the name of
-% additional contributors to this work.
-%
-% If you think you can add pieces of relevant/useful examples,
-% improvements, please contact us at (macias@depeca.uah.es)
-%
-% You can freely use this template and please contribute with
-% comments or suggestions!!!
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -72,17 +55,6 @@
 % MUANBD - Máster Universitario en Analítica de Negocio y Big Data
 % PHDUAH - Doctorado UAH
 % PHDUPM - Doctorado UPM
-%
-% GEINTRARR - Geintra Research Report (alpha support)
-%
-% And the already deprecated pre-Bologna degrees (still active for
-% sentimental reasons :-)):
-% IT     - Ingeniería de Telecomunicación
-% IE     - Ingeniería Electrónica
-% ITTSE  - Ingeniería Técnica de Telecomunicación, Sistemas Electrónicos
-% ITTST  - Ingeniería Técnica de Telecomunicación, Sistemas de Telecomunicación
-% ITI    - Ingeniería Técnica Industrial, Electrónica Industrial 
-%
 % You can include additional degrees and modify Config/myconfig.tex
 % Config/postamble.tex and Book/cover/cover.tex, generating new specific
 % cover files if needed. Contact me if you want additional details
@@ -98,7 +70,7 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % General document information
-\newcommand{\myBookTitleSpanish}{Detección automática de acciones cotidianas mediante visión artificial para el proyecto NEUREYE}
+\newcommand{\myBookTitleSpanish}{Detección automática de gestos mediante visión artificial para el proyecto NeurEYE}
 \newcommand{\myBookTitleEnglish}{Unified Template for the Generation of PFCs, TFGs, TFMs and PhD Thesis}
 \newcommand{\myThesisKeywords}{Plantillas de trabajos fin de carrera/máster/grado y tesis doctorales, \LaTeX, soporte de español e inglés, generación automática} % (máximo de cinco)
 \newcommand{\myThesisKeywordsEnglish}{Bsc., Msc. and PhD. Thesis template, \LaTeX, English/Spanish support, automatic generation} % (up to a maximum of five)
@@ -119,7 +91,6 @@
 \newcommand{\myAuthorPostalCode}{28050}
 \newcommand{\myAuthorProvince}{Madrid}
 \newcommand{\myAuthorTelephone}{685868466}
-
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Advisor data
@@ -146,15 +117,11 @@
 \newcommand{\mySchool}{Escuela Politécnica Superior}
 \newcommand{\myUniversity}{Universidad de Alcalá}
 \newcommand{\myUniversityAcronym}{UAH}
-
 \newcommand{\myDepartment}{Departamento de Electrónica}
 \newcommand{\myDepartmentEnglish}{Departament of Electronics}
-
 \newcommand{\myPhDProgram}{Programa de Doctorado en Electrónica: Sistemas Electrónicos Avanzados. Sistemas Inteligentes}
 \newcommand{\myPhDProgramEnglish}{PhD. Program in Electronics: Advanced Electronic Systems. Intelligent Systems}
-
 \newcommand{\myResearchGroup}{GEINTRA}
-
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Tribunal members & department staff
@@ -178,11 +145,9 @@
 \newcommand{\myTribunalGrade}{3}
 \newcommand{\myTribunalMHProposal}{NO} % Set this to YES or NO
 
-
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Calendar dates 
 \newcommand{\myThesisProposalDate}{16 de enero de 2026} % "Anteproyecto" date
-
 \newcommand{\myThesisDepositDate}{15 de junio de 2026}
 \newcommand{\myThesisDepositDateEnglish}{June 15\textsuperscript{th}, 2026}
 
@@ -193,7 +158,6 @@
 \newcommand{\myThesisdefenseDateEnglish}{June 24\textsuperscript{th}, \myThesisDefenseYear{}}
 % If you prefer British English for the date, use this:
 % \newcommand{\myThesisdefenseDateEnglish}{6\textsuperscript{th} of January, 2018}
-
 \newcommand{\myPaperworkDate}{\myThesisDepositDate}
 \newcommand{\myPaperworkDateEnglish}{\myThesisDepositDateEnglish}
 
@@ -203,16 +167,13 @@
 \newcommand{\myAuthorizationOpenPublishingEmbargoMonths}{0} % Can be
                                                             %  0,  6, 12,
                                                             % 18, 24
-
 \newcommand{\myResearchVicerrector}{Excmo. Sr. Francisco J. de la Mata de la Mata}
 \newcommand{\myResearchVicerrectorGender}{male}
 
 % Copyright related issues
 \newcommand{\myCopyrightStatement}{\myAuthorFullName{}. Some rights reserved. This document is under terms of Creative Commons license Attribution - Non Commercial - Non Derivatives.}
 \newcommand{\myLicenseURL}{http://creativecommons.org/licenses/by-nc-nd/3.0/es/}
-
 \newcommand{\myResearchReportID}{RR-2021-01}
-
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Link color definition
@@ -249,7 +210,6 @@
 % This one is to define a specific format for english text in a Spanish
 % document
 \DeclareRobustCommand{\texten}[1]{\textit{#1}}
-
 \def\ci{\perp\!\!\!\perp}
 
 % Various examples of commonly used commands
@@ -259,13 +219,11 @@
 \newcommand{\triangulo}{\scriptsize $\vartriangle$}
 \newcommand{\triangv}{\scriptsize $\triangledown$}
 \newcommand{\diamante}{\large $\diamond$}
-
 \newcommand{\new}[1]{\textcolor{magenta}{#1 }}
 \newcommand{\argmax}[1]{\underset{#1}{\operatorname{argmax}}}
 
 % These are examples used in the sample chapters
 \newcommand{\verticalSpacingSRPMaps}{-0.3cm}
-
 \newcommand{\CAVDB}{\texttt{CAV3D}}
 \newcommand{\AVThreeTVLoc}{\texttt{AV3T-VLoc}}
 \newcommand{\LandPoseVLoc}{\texttt{LandPose-VLoc}}
@@ -275,7 +233,6 @@
 \newcommand{\maeThreeDfine}{\maeThreeD'}
 \newcommand{\maeTwoD}{\mae_{2D}}
 \newcommand{\maeTwoDfine}{\maeTwoD'}
-
 \newcommand{\NumDataFrames}{N_F}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -288,7 +245,6 @@
                                    % for TFG's: the type of adscription of
                                    % the author signing the agreement
                                    % (should be "alumno" in most cases)
-
 \newcommand{\myUPMdegree}{Ingeniero de Telecomunicación} % Used in UPM
 
 % Comments
