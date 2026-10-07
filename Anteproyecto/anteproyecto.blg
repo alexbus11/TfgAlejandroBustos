@@ -1,9 +1,9 @@
 [0] Config.pm:329> INFO - This is Biber 2.22
-[0] Config.pm:332> INFO - Logfile is 'anteproyecto.blg'
-[89] biber-MSWIN64:342> INFO - === 
-[130] Biber.pm:421> INFO - Reading 'anteproyecto.bcf'
-[214] Biber.pm:1002> INFO - Found 0 citekeys in bib section 0
-[223] bbl.pm:676> INFO - Writing 'anteproyecto.bbl' with encoding 'UTF-8'
-[223] bbl.pm:779> INFO - Output to anteproyecto.bbl
-[223] Biber.pm:132> WARN - The file 'anteproyecto.bcf' does not contain any citations!
-[223] Biber.pm:134> INFO - WARNINGS: 1
+[1] Config.pm:332> INFO - Logfile is 'anteproyecto.blg'
+[180] biber-MSWIN64:342> INFO - === 
+[230] Biber.pm:421> INFO - Reading 'anteproyecto.bcf'
+[381] Biber.pm:1002> INFO - Found 0 citekeys in bib section 0
+[400] bbl.pm:676> INFO - Writing 'anteproyecto.bbl' with encoding 'UTF-8'
+[400] bbl.pm:779> INFO - Output to anteproyecto.bbl
+[401] Biber.pm:132> WARN - The file 'anteproyecto.bcf' does not contain any citations!
+[401] Biber.pm:134> INFO - WARNINGS: 1
