@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.5) (preloaded format=pdflatex 2026.10.1)  7 OCT 2026 12:24
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.5) (preloaded format=pdflatex 2026.10.1)  21 OCT 2026 15:01
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1918,7 +1918,7 @@ Package csquotes Info: Checking for multilingual support...
 Package csquotes Info: ... found 'babel' package.
 Package csquotes Info: Adjusting default style.
 Package csquotes Info: Redefining alias 'default' -> 'spanish'.
-LaTeX Font Info:    Trying to load font information for T1+lmr on input line 53
+LaTeX Font Info:    Trying to load font information for T1+lmr on input line 74
 .
 
 (C:\Users\aalex\Documents\miktex\tex/latex/lm\t1lmr.fd
@@ -1933,24 +1933,24 @@ LaTeX Info: Redefining \% on input line 14.
 )
 \openout1 = `anteproyecto.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 53.
-LaTeX Font Info:    ... okay on input line 53.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 53.
-LaTeX Font Info:    ... okay on input line 53.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 53.
-LaTeX Font Info:    ... okay on input line 53.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 53.
-LaTeX Font Info:    ... okay on input line 53.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 53.
-LaTeX Font Info:    ... okay on input line 53.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 53.
-LaTeX Font Info:    ... okay on input line 53.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 53.
-LaTeX Font Info:    ... okay on input line 53.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 53.
-LaTeX Font Info:    ... okay on input line 53.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 53.
-LaTeX Font Info:    ... okay on input line 53.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 74.
+LaTeX Font Info:    ... okay on input line 74.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 74.
+LaTeX Font Info:    ... okay on input line 74.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 74.
+LaTeX Font Info:    ... okay on input line 74.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 74.
+LaTeX Font Info:    ... okay on input line 74.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 74.
+LaTeX Font Info:    ... okay on input line 74.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 74.
+LaTeX Font Info:    ... okay on input line 74.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 74.
+LaTeX Font Info:    ... okay on input line 74.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 74.
+LaTeX Font Info:    ... okay on input line 74.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 74.
+LaTeX Font Info:    ... okay on input line 74.
 
 (C:\Users\aalex\Documents\miktex\tex/context/base/mkii\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
@@ -1977,7 +1977,7 @@ File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 Package todonotes Warning: The length marginparwidth is less than 2cm and will 
 most likely cause issues with the appearance of inserted todonotes. The issue c
 an be solved by adding a line like \setlength {\marginparwidth }{2cm} prior to 
-loading the todonotes package. on input line 53.
+loading the todonotes package. on input line 74.
 
 \c@lstlisting=\count571
 *geometry* driver: auto-detecting
@@ -2014,7 +2014,7 @@ loading the todonotes package. on input line 53.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-Package hyperref Info: Link coloring ON on input line 53.
+Package hyperref Info: Link coloring ON on input line 74.
 (anteproyecto.out) (anteproyecto.out)
 \@outlinefile=\write5
 \openout5 = `anteproyecto.out'.
@@ -2062,11 +2062,11 @@ Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'anteproyecto.bbl' found.
 
 (anteproyecto.bbl)
-Package biblatex Info: Reference section=0 on input line 53.
-Package biblatex Info: Reference segment=0 on input line 53.
-LaTeX Info: Redefining \sptext on input line 53.
-LaTeX Info: Redefining \. on input line 53.
-LaTeX Info: Redefining \% on input line 53.
+Package biblatex Info: Reference section=0 on input line 74.
+Package biblatex Info: Reference segment=0 on input line 74.
+LaTeX Info: Redefining \sptext on input line 74.
+LaTeX Info: Redefining \. on input line 74.
+LaTeX Info: Redefining \% on input line 74.
 Package babel Info: Main language set to 'spanish'.
  (../Config/setlanguagedependentissues.tex
 LaTeX Info: Redefining \sptext on input line 77.
@@ -2076,21 +2076,29 @@ LaTeX Info: Redefining \% on input line 77.
 
 {C:/Users/aalex/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}{C:/Users/aale
 x/Documents/miktex/fonts/enc/dvips/lm/lm-ec.enc}]
-LaTeX Info: Redefining \sptext on input line 130.
-LaTeX Info: Redefining \. on input line 130.
-LaTeX Info: Redefining \% on input line 130.
+
+Package hyperref Warning: Difference (2) between bookmark levels is greater 
+(hyperref)                than one, level fixed on input line 150.
+
+LaTeX Info: Redefining \sptext on input line 157.
+LaTeX Info: Redefining \. on input line 157.
+LaTeX Info: Redefining \% on input line 157.
 Package babel Info: 'spanish' activates 'spanish' shorthands.
-(babel)             Reported on input line 130.
- [2]
-LaTeX Info: Redefining \sptext on input line 232.
-LaTeX Info: Redefining \. on input line 232.
-LaTeX Info: Redefining \% on input line 232.
+(babel)             Reported on input line 157.
+[2]
+LaTeX Info: Redefining \sptext on input line 213.
+LaTeX Info: Redefining \. on input line 213.
+LaTeX Info: Redefining \% on input line 213.
  [3]
-Underfull \hbox (badness 2393) in paragraph at lines 237--238
+Underfull \hbox (badness 2393) in paragraph at lines 218--219
 []\T1/lmr/m/it/10.95 Implementación: \T1/lmr/m/n/10.95 De-sa-rro-llo del al-go-
 rit-mo de ex-trac-ción de ca-rac-te-rís-ti-cas y
  []
 
+LaTeX Info: Redefining \sptext on input line 229.
+LaTeX Info: Redefining \. on input line 229.
+LaTeX Info: Redefining \% on input line 229.
+[4]
 Missing character: There is no . in font nullfont!
 Missing character: There is no 1 in font nullfont!
 Missing character: There is no . in font nullfont!
@@ -2139,77 +2147,83 @@ Missing character: There is no . in font nullfont!
 Missing character: There is no 0 in font nullfont!
 Missing character: There is no . in font nullfont!
 Missing character: There is no 0 in font nullfont!
-LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 3
-00.
+LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 2
+80.
 (C:\Users\aalex\Documents\miktex\tex/latex/lm\ts1lmr.fd
 File: ts1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
-LaTeX Info: Redefining \sptext on input line 305.
-LaTeX Info: Redefining \. on input line 305.
-LaTeX Info: Redefining \% on input line 305.
- [4{C:/Users/aalex/Documents/miktex/fonts/enc/dvips/lm/lm-ts1.enc}]
-LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 3
-11.
+LaTeX Info: Redefining \sptext on input line 291.
+LaTeX Info: Redefining \. on input line 291.
+LaTeX Info: Redefining \% on input line 291.
+ [5{C:/Users/aalex/Documents/miktex/fonts/enc/dvips/lm/lm-ts1.enc}]
+LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 2
+91.
 
 (C:\Users\aalex\Documents\miktex\tex/latex/lm\ot1lmr.fd
 File: ot1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
-LaTeX Font Info:    Trying to load font information for OML+lmm on input line 3
-11.
+LaTeX Font Info:    Trying to load font information for OML+lmm on input line 2
+91.
 
 (C:\Users\aalex\Documents\miktex\tex/latex/lm\omllmm.fd
 File: omllmm.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 
-311.
+291.
 
 (C:\Users\aalex\Documents\miktex\tex/latex/lm\omslmsy.fd
 File: omslmsy.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 
-311.
+291.
 
 (C:\Users\aalex\Documents\miktex\tex/latex/lm\omxlmex.fd
 File: omxlmex.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10.95> on input line 311.
+(Font)              <10.95> on input line 291.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8> on input line 311.
+(Font)              <8> on input line 291.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6> on input line 311.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 311
+(Font)              <6> on input line 291.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 291
 .
 
 (C:\Users\aalex\Documents\miktex\tex/latex/amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 311
+LaTeX Font Info:    Trying to load font information for U+msb on input line 291
 .
 
 (C:\Users\aalex\Documents\miktex\tex/latex/amsfonts\umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Trying to load font information for U+wasy on input line 31
+LaTeX Font Info:    Trying to load font information for U+wasy on input line 29
 1.
 
 (C:\Users\aalex\Documents\miktex\tex/latex/wasysym\uwasy.fd
 File: uwasy.fd 2020/01/19 v2.4 Wasy-2 symbol font definitions
 )
-(../Book/biblio/bibliography.tex
+LaTeX Info: Redefining \sptext on input line 312.
+LaTeX Info: Redefining \. on input line 312.
+LaTeX Info: Redefining \% on input line 312.
+ [6]
+Underfull \hbox (badness 10000) in paragraph at lines 319--322
+[]\T1/lmr/m/n/10.95 Grupo de In-ge-nie-ría Elec-tró-ni-ca Apli-ca-da (GEIN-TRA)
+, ``Pro-yec-to EYE-FUL:
+ []
 
-LaTeX Warning: Empty bibliography on input line 284.
-
-)
-LaTeX Info: Redefining \sptext on input line 324.
-LaTeX Info: Redefining \. on input line 324.
-LaTeX Info: Redefining \% on input line 324.
- (C:\Users\aalex\Documents\miktex\tex/generic/stringenc\se-pdfdoc.def
+LaTeX Info: Redefining \sptext on input line 335.
+LaTeX Info: Redefining \. on input line 335.
+LaTeX Info: Redefining \% on input line 335.
+(C:\Users\aalex\Documents\miktex\tex/generic/stringenc\se-pdfdoc.def
 File: se-pdfdoc.def 2019/11/29 v1.12 stringenc: PDFDocEncoding
 )
 (C:\Users\aalex\Documents\miktex\tex/generic/stringenc\se-utf8.def
 File: se-utf8.def 2019/11/29 v1.12 stringenc: UTF-8
-) [5]
+) [7
+
+]
 (anteproyecto.aux
 LaTeX Info: Redefining \sptext on input line 13.
 LaTeX Info: Redefining \. on input line 13.
@@ -2223,29 +2237,29 @@ LaTeX2e <2026-06-01>
 L3 programming layer <2026-09-09>
  ***********
 Package rerunfilecheck Info: File `anteproyecto.out' has not changed.
-(rerunfilecheck)             Checksum: 3F54E08D2C955ED60D0ADE8B501754C8;709.
+(rerunfilecheck)             Checksum: 9E5CBCABD5D1DB90530478F06B224C97;2250.
 Package logreq Info: Writing requests to 'anteproyecto.run.xml'.
 \openout1 = `anteproyecto.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 43999 strings out of 467391
- 840367 string characters out of 5411897
- 1800703 words of memory out of 5000000
- 72541 multiletter control sequences out of 15000+600000
- 671418 words of font info for 72 fonts, out of 8000000 for 9000
+ 44027 strings out of 467391
+ 840717 string characters out of 5411897
+ 1802942 words of memory out of 5000000
+ 72559 multiletter control sequences out of 15000+600000
+ 674416 words of font info for 73 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 122i,11n,124p,1250b,2241s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 122i,11n,124p,1250b,2242s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/aalex/Documents/miktex/fonts/type1/public/lm/lmbx10.pfb><C:/Users/a
 alex/Documents/miktex/fonts/type1/public/lm/lmbx12.pfb><C:/Users/aalex/Document
 s/miktex/fonts/type1/public/lm/lmr10.pfb><C:/Users/aalex/Documents/miktex/fonts
 /type1/public/lm/lmr12.pfb><C:/Users/aalex/Documents/miktex/fonts/type1/public/
 lm/lmr17.pfb><C:/Users/aalex/Documents/miktex/fonts/type1/public/lm/lmr8.pfb><C
 :/Users/aalex/Documents/miktex/fonts/type1/public/lm/lmri10.pfb>
-Output written on anteproyecto.pdf (5 pages, 209439 bytes).
+Output written on anteproyecto.pdf (7 pages, 222050 bytes).
 PDF statistics:
- 113 PDF objects out of 1000 (max. 8388607)
- 90 compressed objects within 1 object stream
- 24 named destinations out of 1000 (max. 500000)
- 57 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 157 PDF objects out of 1000 (max. 8388607)
+ 131 compressed objects within 2 object streams
+ 36 named destinations out of 1000 (max. 500000)
+ 113 words of extra memory for PDF output out of 10000 (max. 10000000)
 
